@@ -5,14 +5,10 @@ import { Button, Container, Dropdown, Menu } from 'semantic-ui-react'
 export default function Navi() {
     return (
         <div>
-            <Menu inverted fixed size='huge'>
+            <Menu inverted fixed="top" size='huge'>
                 <Container>
-                <Menu.Item
-                    name='home'
-                />
-                <Menu.Item
-                    name='messages'
-                />
+                <Menu.Item name='home'/>
+                <Menu.Item name='messages'/>
 
                 <Menu.Menu position='right'>
                     <Dropdown item text='Language'>
@@ -30,7 +26,7 @@ export default function Navi() {
                 </Container>
             </Menu>
 
-            <div style={{ height: "5000px" }}></div>
+       
 
         </div>
     )
